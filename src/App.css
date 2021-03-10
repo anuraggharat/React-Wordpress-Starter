@@ -117,3 +117,11 @@ p {
 .blog-card {
   margin: 100px 0px !important;
 }
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 3rem !important;
+  }
+  .home {
+    text-align: center !important;
+  }
+}

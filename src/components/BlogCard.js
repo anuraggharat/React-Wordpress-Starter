@@ -5,11 +5,11 @@ export default function BlogCard(props) {
   const d = new Date(props.blog.date);
   return (
     <div className="blog-card">
-      <div className="d-flex between">
+      <div className="">
         <h2 className="m-0">{props.blog.title}</h2>
         <p className="black-text">{d.toDateString()}</p>
       </div>
-      <p dangerouslySetInnerHTML={{ __html: props.blog.excerpt }}>{}</p>
+      <p dangerouslySetInnerHTML={{ __html: props.blog.excerpt }}></p>
       <p>
         Posted By:<span className="black-text"> {props.blog.author.name}</span>
       </p>

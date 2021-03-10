@@ -4,7 +4,7 @@ import { Link, Redirect } from "react-router-dom";
 export default function Blog(props) {
   if (props.location.blog) {
     const { blog } = props.location;
-    console.log(props.location);
+
     const datenew = new Date(blog.date);
     return (
       <div>
@@ -16,7 +16,7 @@ export default function Blog(props) {
           </div>
 
           <div className="row">
-            <p dangerouslySetInnerHTML={{ __html: blog.content }}>{}</p>
+            <p dangerouslySetInnerHTML={{ __html: blog.content }} />
           </div>
           <div className="row float-left align-center">
             <img
@@ -24,6 +24,7 @@ export default function Blog(props) {
               width="30px"
               height="30px"
               className="rounded"
+              alt="Anurag Gharat"
             />{" "}
             {blog.author.name}
           </div>

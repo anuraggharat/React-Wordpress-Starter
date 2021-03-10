@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <nav>
       <div>
-        <h1>React WordPress</h1>
+        <h3>React WordPress</h3>
       </div>
       <div className="links">
         <Link to="/">Home</Link>

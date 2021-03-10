@@ -1,18 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { getAllBlogs } from "../Api";
 import BlogCard from "../components/BlogCard";
 import Header from "../components/Header";
 import Loader from "../components/Loader";
-import { Link } from "react-router-dom";
 
 export default function Home() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  getAllBlogs()
-    .then((res) => setData(res.posts))
-    .catch((error) => console.log(error))
-    .finally(() => setLoading(false));
+  const getData = () => {
+    getAllBlogs()
+      .then((res) => setData(res.posts))
+      .catch((error) => console.log(error))
+      .finally(() => setLoading(false));
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
   return (
     <div>
       <Header />
