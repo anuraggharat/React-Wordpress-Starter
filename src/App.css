@@ -1,29 +1,119 @@
-body{
+body {
+  width: 100%;
+  height: 100%;
   padding: 0px;
   margin: 0px;
-  background-color: #fefefe;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0px;
   width: 100%;
-  min-height:100v ;
-}
-nav{
-  padding: 0px 20px;
-  display: flex;
-  justify-content: space-between;
-  background-color: #fefefe;
-  color: #222222;
-  align-items: center;
-  vertical-align: middle;
-}
-.container{
-  padding: 20px;
-}
-.blog-card{
-  background-color: white;
-}
-.d-flex{
-  display: flex;
-  align-items: center;
-  vertical-align: middle;
-  justify-content: space-between;
+  z-index: 10;
+  background-color: #fff;
+  color: #111;
 }
 
+.links > a {
+  margin: 0px 10px;
+  text-decoration: none;
+  color: #111;
+}
+.home {
+  width: 100%;
+  min-height: 80vh;
+  background: url("./assets/image1.jpg");
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white !important;
+}
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+}
+.about {
+  background: url("./assets/image2.jpg");
+  width: 100%;
+  min-height: 80vh;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white !important;
+}
+.home > h1,
+.about > h1 {
+  font-size: 5rem;
+  z-index: 1;
+}
+a {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+a:hover {
+  text-decoration: underline;
+}
+.overlay {
+  background-color: #111;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+.container {
+  min-height: 100vh;
+  width: 80%;
+  margin: 0px auto;
+}
+.mt-5 {
+  margin-top: 50px;
+}
+.row {
+  margin: 20px 0px !important;
+}
+.row > h1 {
+  font-size: 5rem;
+}
+.float-left {
+  float: right;
+}
+.align-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+.m-0 {
+  margin: 0px;
+}
+.black-text {
+  font-weight: 600;
+  color: #111;
+}
+p {
+  font-size: 1rem;
+  color: rgb(100, 100, 100);
+  margin: 0.75rem 0px;
+}
+.blog-card {
+  margin: 100px 0px !important;
+}

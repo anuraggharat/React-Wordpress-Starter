@@ -1,9 +1,20 @@
-import React from 'react'
-
+import React from "react";
+import "./loader.css";
 export default function Loader() {
-    return (
-        <div>
-            <h1>Loading</h1>
-        </div>
-    )
+  return (
+    <div className="lds-default">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  );
 }

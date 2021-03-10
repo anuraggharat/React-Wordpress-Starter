@@ -1,18 +1,16 @@
-import React from 'react'
-import Github from '../assets/github.png'
-
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
-    return (
-        <header>
-            <nav>
-                <div className="nav-logo">
-                <h2>React-Wordpress</h2>
-                </div>
-                <div className="nav=list">
-                    <img src={Github} className="nav-img" height="50px" width="50px" />
-                </div>
-            </nav>
-        </header>
-    )
+  return (
+    <nav>
+      <div>
+        <h1>React WordPress</h1>
+      </div>
+      <div className="links">
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+      </div>
+    </nav>
+  );
 }
